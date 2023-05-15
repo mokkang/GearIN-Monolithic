@@ -25,7 +25,7 @@
 <h3 align="center">GearIN</h3>
 <h4 align="center">Monolithic Architecture</h4>
   <p align="center">
-    Monolithic Architecture Full Stack Application E-Commerce Application
+    Monolithic Architecture Full Stack E-Commerce Application
     <br />
     <a href="https://github.com/Code-Flaps/GearIN-Monolithic"><strong>Explore the docs »</strong></a>
     <br />
@@ -59,8 +59,6 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
