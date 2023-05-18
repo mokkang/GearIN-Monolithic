@@ -27,7 +27,7 @@ Start the backend application.
     yarn start
 ```
 
-Use [http://localhost:4000](http://localhost:4000) to test in APIs.
+Use [http://localhost:4000](http://localhost:4000) to test APIs.
 
 ## List Of APIs
 
