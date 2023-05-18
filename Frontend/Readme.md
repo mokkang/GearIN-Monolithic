@@ -1,4 +1,4 @@
-# ReactJS Frontend App
+# GearIN ReactJS Frontend Application
 
 This is the User Facing UI where login, register, product changes and browsing feature works with integration built using ReactJS.
 

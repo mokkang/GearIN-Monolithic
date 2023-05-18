@@ -1,6 +1,6 @@
-# GearIn Monolithic Backend
+# GearIN Monolithic Backend Application
 
-This is the monolithic backend application handles request coming from frontend for authentication and product changes using MongoDB, NodeJS and ExpressJS.
+This is the monolithic backend application handles request coming from frontend for authentication and product changes built using MongoDB, NodeJS and ExpressJS.
 
 ## Run the App on the Local Machine
 
