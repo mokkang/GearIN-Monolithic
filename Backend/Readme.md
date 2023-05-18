@@ -1,6 +1,6 @@
-# ReactJS Backend App
+# GearIn Monolithic Backend
 
-This is the monolithic backend application handles request coming from frontend for authentication and product changes using MongoDB.
+This is the monolithic backend application handles request coming from frontend for authentication and product changes using MongoDB, NodeJS and ExpressJS.
 
 ## Run the App on the Local Machine
 
