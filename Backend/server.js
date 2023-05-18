@@ -1,5 +1,4 @@
 import express from "express";
-import colors from "colors";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import connectDB from "./config/db.js";
@@ -29,15 +28,15 @@ app.use("/api/v1/product", productRoutes);
 
 // REST api
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to GearIN Backend</h1>");
+  res.send("<h1>GearIN Backend Status: UP</h1>");
 });
 
 // Port
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 4000;
 
 // Server Listen
 app.listen(PORT, () => {
   console.log(
-    `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`.bgCyan .white
+    `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`
   );
 });
