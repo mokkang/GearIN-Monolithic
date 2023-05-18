@@ -8,34 +8,34 @@ import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import cors from "cors";
 
-//ENV Configuration
+// ENV Configuration
 dotenv.config();
 
-//Database Configuration
+// Database Configuration
 connectDB();
 
-//REST object
+// REST object
 const app = express();
 
-//Middlewares
+// Middlewares
 app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
-//Routes
+// Routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
-//REST Api
+// REST api
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to ecommerce app</h1>");
+  res.send("<h1>Welcome to GearIN Backend</h1>");
 });
 
-//Port
+// Port
 const PORT = process.env.PORT || 8080;
 
-//Server Listen
+// Server Listen
 app.listen(PORT, () => {
   console.log(
     `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`.bgCyan .white
