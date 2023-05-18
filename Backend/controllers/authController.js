@@ -26,18 +26,21 @@ export const registerController = async (req, res) => {
     if (!answer) {
       return res.send({ message: "Answer is Required" });
     }
-    //check user
-    const exisitingUser = await userModel.findOne({ email });
-    //exisiting user
-    if (exisitingUser) {
+    // Check User
+    const existingUser = await userModel.findOne({ email });
+
+    // Existing User
+    if (existingUser) {
       return res.status(200).send({
         success: false,
-        message: "Already Register please login",
+        message: "Already register please login",
       });
     }
-    //register user
+
+    //Register User
     const hashedPassword = await hashPassword(password);
-    //save
+
+    //Save User
     const user = await new userModel({
       name,
       email,
@@ -66,14 +69,16 @@ export const registerController = async (req, res) => {
 export const loginController = async (req, res) => {
   try {
     const { email, password } = req.body;
-    //validation
+
+    //Validation
     if (!email || !password) {
       return res.status(404).send({
         success: false,
         message: "Invalid email or password",
       });
     }
-    //check user
+
+    //Check User
     const user = await userModel.findOne({ email });
     if (!user) {
       return res.status(404).send({
@@ -88,7 +93,8 @@ export const loginController = async (req, res) => {
         message: "Invalid Password",
       });
     }
-    //token
+
+    //Token
     const token = await JWT.sign({ _id: user._id }, process.env.JWT_SECRET, {
       expiresIn: "7d",
     });
@@ -115,7 +121,7 @@ export const loginController = async (req, res) => {
   }
 };
 
-//forgotPasswordController
+//ForgotPasswordController
 export const forgotPasswordController = async (req, res) => {
   try {
     const { email, answer, newPassword } = req.body;
@@ -128,13 +134,15 @@ export const forgotPasswordController = async (req, res) => {
     if (!newPassword) {
       res.status(400).send({ message: "New Password is required" });
     }
-    //check
+
+    //Check
     const user = await userModel.findOne({ email, answer });
-    //validation
+
+    //Validation
     if (!user) {
       return res.status(404).send({
         success: false,
-        message: "Wrong Email Or Answer",
+        message: "Wrong Email Provided",
       });
     }
     const hashed = await hashPassword(newPassword);
@@ -147,13 +155,13 @@ export const forgotPasswordController = async (req, res) => {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Something went wrong",
+      message: "Something Went Wrong",
       error,
     });
   }
 };
 
-//test controller
+//Test Controller
 export const testController = (req, res) => {
   try {
     res.send("Protected Routes");
@@ -163,14 +171,15 @@ export const testController = (req, res) => {
   }
 };
 
-//update profile
+//Update Profile
 export const updateProfileController = async (req, res) => {
   try {
     const { name, email, password, address, phone } = req.body;
     const user = await userModel.findById(req.user._id);
-    //password
+    
+    //Password
     if (password && password.length < 6) {
-      return res.json({ error: "Passsword is required and 6 character long" });
+      return res.json({ error: "Passsword is Required and 6 Character Long" });
     }
     const hashedPassword = password ? await hashPassword(password) : undefined;
     const updatedUser = await userModel.findByIdAndUpdate(
@@ -185,14 +194,14 @@ export const updateProfileController = async (req, res) => {
     );
     res.status(200).send({
       success: true,
-      message: "Profile Updated SUccessfully",
+      message: "Profile Updated Successfully",
       updatedUser,
     });
   } catch (error) {
     console.log(error);
     res.status(400).send({
       success: false,
-      message: "Error WHile Update profile",
+      message: "Error While Updating Profile",
       error,
     });
   }
@@ -210,7 +219,7 @@ export const getOrdersController = async (req, res) => {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Error WHile Geting Orders",
+      message: "Error While Getting Orders",
       error,
     });
   }
@@ -229,7 +238,7 @@ export const getAllOrdersController = async (req, res) => {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Error WHile Geting Orders",
+      message: "Error While Getting Orders",
       error,
     });
   }
@@ -250,7 +259,7 @@ export const orderStatusController = async (req, res) => {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Error While Updateing Order",
+      message: "Error While Updating Order",
       error,
     });
   }
