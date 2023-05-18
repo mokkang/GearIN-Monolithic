@@ -1,9 +1,21 @@
 # ReactJS Backend App
 
-This is the Monolithic backend for GearIN.
+This is the monolithic backend application handles request coming from frontend for authentication and product changes using MongoDB.
 
 ## Run the App on the Local Machine
 
+To Run this application on local machine make sure node.js installed and make accounts at [Braintree](https://www.braintreepayments.com/) and [Paypal Developer](https://developer.paypal.com/home).
+
+and make in a file named as .env in ./Backend then copy below env variables and value with yours
+```
+    PORT = 4000
+    DEV_MODE = development
+    MONGO_URL = <Mongo_URI>/GearIN
+    JWT_SECRET = <Random_Generated_JWT_Token>
+    BRAINTREE_MERCHANT_ID = <MERCHANT_ID from https://www.braintreepayments.com/>
+    BRAINTREE_PUBLIC_KEY = <PUBLIC_KEY from https://www.braintreepayments.com/>
+    BRAINTREE_PRIVATE_KEY = <PRIVATE_KEY from https://www.braintreepayments.com/>
+```
  Install the required dependencies
 ```
     cd ./Backend
@@ -15,7 +27,7 @@ Start the backend application.
     yarn start
 ```
 
-Open [http://localhost:4000](http://localhost:4000) to test in APIs.
+Use [http://localhost:4000](http://localhost:4000) to test in APIs.
 
 ## List Of APIs
 
