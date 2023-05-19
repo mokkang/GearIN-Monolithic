@@ -6,6 +6,7 @@ This is the User Facing UI where login, register, product changes and browsing f
 
  Install the required dependencies
 ```
+    cd ./Frontend
     yarn install
 ```
 
