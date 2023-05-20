@@ -51,7 +51,7 @@ const UpdateProduct = () => {
       }
     } catch (error) {
       console.log(error);
-      toast.error("Something wwent wrong in getting catgeory");
+      toast.error("Something went wrong in getting category");
     }
   };
 
@@ -89,12 +89,12 @@ const UpdateProduct = () => {
   //delete a product
   const handleDelete = async () => {
     try {
-      let answer = window.prompt("Are You Sure want to delete this product ? ");
+      let answer = window.prompt("Are you sure to delete this product? ");
       if (!answer) return;
       const { data } = await axios.delete(
         `/api/v1/product/delete-product/${id}`
       );
-      toast.success("Product DEleted Succfully");
+      toast.success("Product Deleted Succfully");
       navigate("/dashboard/admin/products");
     } catch (error) {
       console.log(error);
@@ -165,7 +165,7 @@ const UpdateProduct = () => {
                 <input
                   type="text"
                   value={name}
-                  placeholder="write a name"
+                  placeholder="Name"
                   className="form-control"
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -174,7 +174,7 @@ const UpdateProduct = () => {
                 <textarea
                   type="text"
                   value={description}
-                  placeholder="write a description"
+                  placeholder="Description"
                   className="form-control"
                   onChange={(e) => setDescription(e.target.value)}
                 />
@@ -184,7 +184,7 @@ const UpdateProduct = () => {
                 <input
                   type="number"
                   value={price}
-                  placeholder="write a Price"
+                  placeholder="Price"
                   className="form-control"
                   onChange={(e) => setPrice(e.target.value)}
                 />
@@ -193,7 +193,7 @@ const UpdateProduct = () => {
                 <input
                   type="number"
                   value={quantity}
-                  placeholder="write a quantity"
+                  placeholder="Quantity"
                   className="form-control"
                   onChange={(e) => setQuantity(e.target.value)}
                 />
@@ -201,7 +201,7 @@ const UpdateProduct = () => {
               <div className="mb-3">
                 <Select
                   bordered={false}
-                  placeholder="Select Shipping "
+                  placeholder="Shipping "
                   size="large"
                   showSearch
                   className="form-select mb-3"

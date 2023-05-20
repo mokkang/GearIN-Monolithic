@@ -39,7 +39,7 @@ const Login = () => {
     }
   };
   return (
-    <Layout title="Register - Ecommer App">
+    <Layout title="Register - GearIN">
       <div className="form-container " style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit}>
           <h4 className="title">LOGIN FORM</h4>
@@ -52,7 +52,7 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Email "
+              placeholder="Enter Your Email"
               required
             />
           </div>

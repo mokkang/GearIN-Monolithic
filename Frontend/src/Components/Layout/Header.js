@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div className="container-fluid">
+        <div className="container">
           <button
             className="navbar-toggler"
             type="button"
@@ -37,7 +37,7 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand">
-              🛒 Ecommerce App
+              🛒 GearIN
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <SearchInput />
@@ -72,17 +72,22 @@ const Header = () => {
                   ))}
                 </ul>
               </li>
+              <li className="nav-item">
+                <NavLink to="/about" className="nav-link ">
+                  About Us
+                </NavLink>
+              </li>
 
               {!auth?.user ? (
                 <>
                   <li className="nav-item">
                     <NavLink to="/register" className="nav-link">
-                      Register
+                      Sign Up
                     </NavLink>
                   </li>
                   <li className="nav-item">
                     <NavLink to="/login" className="nav-link">
-                      Login
+                      Sign In
                     </NavLink>
                   </li>
                 </>

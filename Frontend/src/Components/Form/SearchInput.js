@@ -33,9 +33,7 @@ const SearchInput = () => {
           value={values.keyword}
           onChange={(e) => setValues({ ...values, keyword: e.target.value })}
         />
-        <button className="btn btn-outline-success" type="submit">
-          Search
-        </button>
+        <button className="btn btn-outline-success" type="submit" class="fas fa-search"></button>
       </form>
     </div>
   );

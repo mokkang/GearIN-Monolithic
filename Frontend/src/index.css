@@ -9,7 +9,7 @@
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Playfair Display', serif; */
 
-/* //navbar css */
+/* navbar css */
 .navbar {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
@@ -20,8 +20,16 @@
   border-bottom: solid gray !important;
 }
 
+.nav-item {
+  margin-left: 8px;
+}
+
 .nav-link {
   font-weight: 300 !important;
+}
+
+.nav-link span {
+  font-size: 17px;
 }
 
 .active {
@@ -53,14 +61,8 @@
 
 .footer {
   color: white;
-  padding: 25px;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000);
+  padding: 5px;
+  background-color: #1c1a38;
 }
 
 .footer a {
@@ -108,12 +110,24 @@
 .contactus {
   margin: 0;
   padding: 0;
-  height: 70vh;
+  /* height: 70vh; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.privacy {
+  display: block;
+  /* height: auto; */
+}
+
+.privacy .col-md-6 {
+  margin: 0 auto;
+}
+
+.privacy .col-md-4 {
+  width: 100%;
+}
 /* ==================== */
 .product-link {
   text-decoration: none !important;
