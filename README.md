@@ -19,7 +19,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Code-Flaps/GearIN-Monolithic">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./Assets/Logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">GearIN</h3>

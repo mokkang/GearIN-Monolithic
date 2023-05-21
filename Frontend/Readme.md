@@ -15,4 +15,19 @@ Start the application.
     yarn start
 ```
 
+## Folder Structure
+
+```
+.
+├── public                            # Public Client Data  
+├── src                               # React Source Folder
+        ├── Components                # Arranged Component Folder 
+        ├── Context                   # Arranged React Context Folder 
+        ├── Hooks                     # Arranged Hooks Folder 
+        ├── Pages                     # Arranged Pages Folder
+        ├── Styles                    # Arranged Styles Folder
+        ├── App.js                   
+└── README.md
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

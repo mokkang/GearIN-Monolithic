@@ -29,6 +29,20 @@ Start the backend application.
 
 Use [http://localhost:4000](http://localhost:4000) to test APIs.
 
+## Folder Structure
+
+```
+.
+├── Config                    # Config for DB
+├── Controllers               # Controllers for Routes
+├── Helpers                   # Helpers for Passwords Hashing
+├── Middlewares               # Middleware for APIs 
+├── Models                    # Models for MongoDB Collections 
+├── Routes                    # Routes for APIs
+├── Server.js                   
+└── Readme.md
+```
+
 ## List Of APIs
 
 #### Authentication APIs
