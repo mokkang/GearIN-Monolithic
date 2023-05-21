@@ -39,7 +39,7 @@ const ProductDetails = () => {
   };
   return (
     <Layout>
-      <div className="row container product-details">
+      <div className="row container product-details background">
         <div className="col-md-6">
           <img
             src={`http://localhost:4000/api/v1/product/product-photo/${product._id}`}
@@ -51,7 +51,7 @@ const ProductDetails = () => {
         </div>
         <div className="col-md-6 product-details-info">
           <h1 className="text-center">Product Details</h1>
-          <hr />
+          <hr/>
           <h6>Name : {product.name}</h6>
           <h6>Description : {product.description}</h6>
           <h6>
@@ -65,8 +65,8 @@ const ProductDetails = () => {
           <button class="btn btn-secondary ms-1">ADD TO CART</button>
         </div>
       </div>
-      <hr />
-      <div className="row container similar-products">
+      <hr/>
+      <div className="row container similar-products background">
         <h4>Similar Products ➡️</h4>
         {relatedProducts.length < 1 && (
           <p className="text-center">No Similar Products found</p>
