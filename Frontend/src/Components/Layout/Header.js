@@ -52,7 +52,7 @@ const Header = () => {
                   to={"/categories"}
                   data-bs-toggle="dropdown"
                 >
-                  Categories
+                  Category
                 </Link>
                 <ul className="dropdown-menu">
                   <li>

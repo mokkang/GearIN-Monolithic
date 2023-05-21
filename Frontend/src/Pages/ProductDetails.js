@@ -18,7 +18,7 @@ const ProductDetails = () => {
   const getProduct = async () => {
     try {
       const { data } = await axios.get(
-        `/api/v1/product/get-product/${params.slug}`
+        `http://localhost:4000/api/v1/product/get-product/${params.slug}`
       );
       setProduct(data?.product);
       getSimilarProduct(data?.product._id, data?.product.category._id);
@@ -30,7 +30,7 @@ const ProductDetails = () => {
   const getSimilarProduct = async (pid, cid) => {
     try {
       const { data } = await axios.get(
-        `/api/v1/product/related-product/${pid}/${cid}`
+        `http://localhost:4000/api/v1/product/related-product/${pid}/${cid}`
       );
       setRelatedProducts(data?.products);
     } catch (error) {
@@ -39,10 +39,10 @@ const ProductDetails = () => {
   };
   return (
     <Layout>
-      <div className="row container product-details">
+      <div className="row container product-details background">
         <div className="col-md-6">
           <img
-            src={`/api/v1/product/product-photo/${product._id}`}
+            src={`http://localhost:4000/api/v1/product/product-photo/${product._id}`}
             className="card-img-top"
             alt={product.name}
             height="300"
@@ -51,7 +51,7 @@ const ProductDetails = () => {
         </div>
         <div className="col-md-6 product-details-info">
           <h1 className="text-center">Product Details</h1>
-          <hr />
+          <hr/>
           <h6>Name : {product.name}</h6>
           <h6>Description : {product.description}</h6>
           <h6>
@@ -65,8 +65,8 @@ const ProductDetails = () => {
           <button class="btn btn-secondary ms-1">ADD TO CART</button>
         </div>
       </div>
-      <hr />
-      <div className="row container similar-products">
+      <hr/>
+      <div className="row container similar-products background">
         <h4>Similar Products ➡️</h4>
         {relatedProducts.length < 1 && (
           <p className="text-center">No Similar Products found</p>
@@ -75,7 +75,7 @@ const ProductDetails = () => {
           {relatedProducts?.map((p) => (
             <div className="card m-2" key={p._id}>
               <img
-                src={`/api/v1/product/product-photo/${p._id}`}
+                src={`http://localhost:4000/api/v1/product/product-photo/${p._id}`}
                 className="card-img-top"
                 alt={p.name}
               />
