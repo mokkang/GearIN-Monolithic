@@ -8,6 +8,7 @@
   font-weight: normal;
   background-color: rgba(0, 0, 255, 0.072) !important;
 }
+
 .cart-page h1 > p {
   font-size: 20px;
   margin-top: 10px;
@@ -18,12 +19,13 @@
   height: 150px !important;
   margin-bottom: 5px !important;
 }
+
 .cart-page .cart-remove-btn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .cart-page .cart-summary {
   text-align: center;
-  /* margin-top: -140px !important; */
 }

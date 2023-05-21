@@ -21,7 +21,7 @@ const Orders = () => {
     if (auth?.token) getOrders();
   }, [auth?.token]);
   return (
-    <Layout title={"Your Orders"}>
+    <Layout title={"Your Orders | GearIN"}>
       <div className="container-flui p-3 m-3 dashboard">
         <div className="row">
           <div className="col-md-3">
@@ -59,7 +59,7 @@ const Orders = () => {
                       <div className="row mb-2 p-3 card flex-row" key={p._id}>
                         <div className="col-md-4">
                           <img
-                            src={`http://localhost:4000/api/v1/product/product-photo/${p._id}`}
+                            src={`/api/v1/product/product-photo/${p._id}`}
                             className="card-img-top"
                             alt={p.name}
                             width="100px"

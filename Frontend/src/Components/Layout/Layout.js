@@ -15,18 +15,19 @@ const Layout = ({ children, title, description, keywords, author }) => {
       </Helmet>
       <Header />
       <div className="main-container">
-      <main className="container main-content" style={{ minHeight: "70vh" }}>
-        <Toaster />
+        <main className="container main-content" style={{ minHeight: "70vh" }}>
+          <Toaster />
 
-        {children}
-      </main></div>
+          {children}
+        </main>
+      </div>
       <Footer />
     </div>
   );
 };
 
 Layout.defaultProps = {
-  title: "Ecommerce app - shop now",
+  title: "Shop Now | GearIN",
   description: "mern stack project",
   keywords: "mern,react,node,mongodb",
   author: "GearIn",

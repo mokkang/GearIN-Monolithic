@@ -43,7 +43,7 @@ const AdminOrders = () => {
     }
   };
   return (
-    <Layout title={"All Orders Data"}>
+    <Layout title={"All Orders Data | GearIN"}>
       <div className="row dashboard">
         <div className="col-md-3">
           <AdminMenu />
@@ -59,7 +59,7 @@ const AdminOrders = () => {
                       <th scope="col">#</th>
                       <th scope="col">Status</th>
                       <th scope="col">Buyer</th>
-                      <th scope="col">date</th>
+                      <th scope="col">Date</th>
                       <th scope="col">Payment</th>
                       <th scope="col">Quantity</th>
                     </tr>
@@ -92,7 +92,7 @@ const AdminOrders = () => {
                     <div className="row mb-2 p-3 card flex-row" key={p._id}>
                       <div className="col-md-4">
                         <img
-                          src={`http://localhost:4000/api/v1/product/product-photo/${p._id}`}
+                          src={`/api/v1/product/product-photo/${p._id}`}
                           className="card-img-top"
                           alt={p.name}
                           width="100px"
