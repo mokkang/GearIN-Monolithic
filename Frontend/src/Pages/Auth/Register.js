@@ -17,7 +17,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/v1/auth/register", {
+      const res = await axios.post("http://localhost:4000/api/v1/auth/register", {
         name,
         email,
         password,
@@ -38,79 +38,91 @@ const Register = () => {
   };
 
   return (
-    <Layout title="Register - Ecommer App">
+    <Layout title="Register | GearIN">
       <div className="form-container" style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit}>
-          <h4 className="title">REGISTER FORM</h4>
+          <h4 className="title">REGISTRATION FORM</h4>
           <div className="mb-3">
+            <label for="full-name">Name</label>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Name"
+              name="full-name"
+              placeholder="Enter your name"
               required
               autoFocus
             />
           </div>
           <div className="mb-3">
+            <label for="email">Email</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Email"
+              name="email"
+              placeholder="Enter your email"
               required
             />
           </div>
           <div className="mb-3">
+            <label for="password">Password</label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="form-control"
               id="exampleInputPassword1"
-              placeholder="Enter Your Password"
+              name="password"
+              placeholder="Enter your password"
               required
             />
           </div>
           <div className="mb-3">
+            <label for="phone">Phone</label>
             <input
               type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Phone"
+              name="phone"
+              placeholder="Enter your phone"
               required
             />
           </div>
           <div className="mb-3">
+            <label for="address">Address</label>
             <input
               type="text"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Enter Your Address"
+              name="address"
+              placeholder="Enter your address"
               required
             />
           </div>
           <div className="mb-3">
+            <label for="security-ans">Security Answer</label>
             <input
               type="text"
               value={answer}
               onChange={(e) => setAnswer(e.target.value)}
               className="form-control"
               id="exampleInputEmail1"
-              placeholder="Security Answer"
+              name="security-ans"
+              placeholder="Security answer"
               required
             />
           </div>
           <button type="submit" className="btn btn-primary">
-            REGISTER
+            SIGN UP
           </button>
         </form>
       </div>

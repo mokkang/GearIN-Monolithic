@@ -17,7 +17,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/api/v1/auth/login", {
+      const res = await axios.post("http://localhost:4000/api/v1/auth/login", {
         email,
         password,
       });
@@ -39,7 +39,7 @@ const Login = () => {
     }
   };
   return (
-    <Layout title="Register - GearIN">
+    <Layout title="Sign In | GearIN">
       <div className="form-container " style={{ minHeight: "90vh" }}>
         <form onSubmit={handleSubmit}>
           <h4 className="title">LOGIN FORM</h4>

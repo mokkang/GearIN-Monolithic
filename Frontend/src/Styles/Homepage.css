@@ -26,6 +26,7 @@
   color: green;
   font-weight: bold;
 }
+
 .home-page button {
   border-radius: 0;
   width: 100%;
@@ -46,9 +47,8 @@
 .home-page .card-img-top {
   height: 300px !important;
 }
-/* ==================
-filters
-============== */
+
+/* Filter container */
 .filters h4 {
   margin-top: 100px;
   color: gray !important;
@@ -62,6 +62,7 @@ filters
 .ant-checkbox-wrapper {
   margin: 2px;
 }
+
 .ant-radio-wrapper {
   margin-bottom: 5px !important;
   margin-left: 10px;

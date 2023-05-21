@@ -10,13 +10,13 @@ const UserMenu = () => {
             to="/dashboard/user/profile"
             className="list-group-item list-group-item-action"
           >
-            Profile
+          <h5>Profile</h5>
           </NavLink>
           <NavLink
             to="/dashboard/user/orders"
             className="list-group-item list-group-item-action"
           >
-            Orders
+          <h5>My Orders</h5>
           </NavLink>
         </div>
       </div>

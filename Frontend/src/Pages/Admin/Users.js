@@ -4,7 +4,7 @@ import Layout from "./../../Components/Layout/Layout";
 
 const Users = () => {
   return (
-    <Layout title={"Dashboard - All Users"}>
+    <Layout title={"Dashboard - All Users | GearIN"}>
       <div className="container-fluid m-3 p-3">
         <div className="row">
           <div className="col-md-3">

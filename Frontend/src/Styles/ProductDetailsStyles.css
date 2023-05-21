@@ -1,11 +1,10 @@
 .product-details {
-  margin-top: 100px !important;
+  margin-top: 60px !important;
 }
 
 .product-details-info {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -28,6 +27,7 @@
   color: green;
   font-weight: bold;
 }
+
 .similar-products button {
   border-radius: 0;
   width: 100%;
