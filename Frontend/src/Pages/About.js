@@ -4,7 +4,7 @@ import Layout from "./../Components/Layout/Layout";
 const About = () => {
   return (
     <Layout title={"About us - GearIN"}>
-      <div className="container">
+      <div className="container background">
       <div className="row contactus">
         <div className="col-md-12">
           <img
