@@ -59,7 +59,7 @@ export const registerController = async (req, res) => {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Errro in Registeration",
+      message: "Error in Registration",
       error,
     });
   }
@@ -100,7 +100,7 @@ export const loginController = async (req, res) => {
     });
     res.status(200).send({
       success: true,
-      message: "login successfully",
+      message: "Login Successfully",
       user: {
         _id: user._id,
         name: user.name,
@@ -115,7 +115,7 @@ export const loginController = async (req, res) => {
     console.log(error);
     res.status(500).send({
       success: false,
-      message: "Error in login",
+      message: "Error Occured While Login",
       error,
     });
   }
@@ -126,10 +126,10 @@ export const forgotPasswordController = async (req, res) => {
   try {
     const { email, answer, newPassword } = req.body;
     if (!email) {
-      res.status(400).send({ message: "Emai is required" });
+      res.status(400).send({ message: "Email is required" });
     }
     if (!answer) {
-      res.status(400).send({ message: "answer is required" });
+      res.status(400).send({ message: "Answer is required" });
     }
     if (!newPassword) {
       res.status(400).send({ message: "New Password is required" });
