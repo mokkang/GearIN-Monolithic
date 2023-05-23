@@ -1,5 +1,6 @@
 .product-details {
   margin-top: 60px !important;
+  padding-bottom: 20px;
 }
 
 .product-details-info {
@@ -10,6 +11,19 @@
 
 .product-details-info h6 {
   margin-bottom: 20px !important;
+}
+
+.cart-btn {
+  background-color: #212529;
+}
+
+.cart-btn:hover {
+  background-color: #6C757D;
+}
+
+.similar-products {
+  padding-top: 10px;
+  border-top: 1px solid black;
 }
 
 .similar-products .card {

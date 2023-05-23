@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Layout from "./../Components/Layout/Layout";
 import axios from "axios";
+import toast from "react-hot-toast";
 import { useParams, useNavigate } from "react-router-dom";
+import { useCart } from "../Context/Cart";
 import "../Styles/ProductDetailsStyles.css";
 
 const ProductDetails = () => {
   const params = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState({});
+  const [cart, setCart] = useCart();
   const [relatedProducts, setRelatedProducts] = useState([]);
 
   //initalp details
@@ -62,10 +65,21 @@ const ProductDetails = () => {
             })}
           </h6>
           <h6>Category : {product?.category?.name}</h6>
-          <button class="btn btn-secondary ms-1">ADD TO CART</button>
+          <button 
+            class="btn btn-secondary ms-1 cart-btn"
+            onClick={() => {
+              setCart([...cart, product]);
+              localStorage.setItem(
+                "cart",
+                JSON.stringify([...cart, product])
+              );
+              toast.success("Item added to cart");
+            }}
+            >
+              ADD TO CART
+          </button>
         </div>
       </div>
-      <hr/>
       <div className="row container similar-products background">
         <h4>Similar Products ➡️</h4>
         {relatedProducts.length < 1 && (
