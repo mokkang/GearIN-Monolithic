@@ -89,7 +89,7 @@ const CartPage = () => {
               <p className="text-center">
                 {cart?.length
                   ? `You have ${cart.length} items in your cart ${
-                      auth?.token ? "" : "please login to checkout !"
+                      auth?.token ? "" : "Please login to checkout !"
                     }`
                   : "Your Cart Is Empty"}
               </p>
