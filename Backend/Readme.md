@@ -6,7 +6,7 @@ This is the monolithic backend application handles request coming from frontend 
 
 To Run this application on local machine make sure node.js installed and make accounts at [Braintree](https://www.braintreepayments.com/) and [Paypal Developer](https://developer.paypal.com/home).
 
-and make in a file named as .env in ./Backend then copy below env variables and value with yours
+and make in a file named as `.env` in `./Backend` then copy below env variables and value with yours
 ```
     PORT = 4000
     DEV_MODE = development
