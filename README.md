@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 A Monolithic Architecture Full Stack E-Commerce Application is a comprehensive and self-contained software system that includes both the front-end and back-end components needed for an online store. It is built as a single, unified unit with tightly coupled modules residing in a single codebase.
 
@@ -133,14 +133,14 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/Code-Flaps/GearIN.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Code-Flaps/GearIN-Monolithic.svg?style=for-the-badge
 [contributors-url]: https://github.com/Code-Flaps/GearIN-Monolithic/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Code-Flaps/GearIN.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/Code-Flaps/GearIN-Monolithic.svg?style=for-the-badge
 [forks-url]: https://github.com/Code-Flaps/GearIN-Monolithic/network/members
-[stars-shield]: https://img.shields.io/github/stars/Code-Flaps/GearIN.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/Code-Flaps/GearIN-Monolithic.svg?style=for-the-badge
 [stars-url]: https://github.com/Code-Flaps/GearIN-Monolithic/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Code-Flaps/GearIN.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Code-Flaps/GearIN-Monolithic.svg?style=for-the-badge
 [issues-url]: https://github.com/Code-Flaps/GearIN-Monolithic/issues
-[license-shield]: https://img.shields.io/github/license/Code-Flaps/GearIN.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Code-Flaps/GearIN-Monolithic.svg?style=for-the-badge
 [license-url]: https://github.com/Code-Flaps/GearIN-Monolithic/blob/main/LICENSE
 [product-screenshot]: images/screenshot.png
