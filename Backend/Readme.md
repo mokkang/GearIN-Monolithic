@@ -39,7 +39,7 @@ GearIN
     - users
 ```
 
-*Note: for username and passwords evict ".com/.domain" for email and that will passwords for example "test@test.com" pass will be "test@test"*
+*Note: for username and passwords evict ".com/.domain" from email and that will passwords for example "test@test.com" pass will be "test@test"*
 
 ## Folder Structure
 
