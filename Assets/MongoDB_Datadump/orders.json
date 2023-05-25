@@ -1,0 +1,1351 @@
+[{
+  "_id": {
+    "$oid": "646a80b936669fee22256487"
+  },
+  "products": [
+    {
+      "$oid": "646a7c2c36669fee2225644f"
+    }
+  ],
+  "payment": {
+    "transaction": {
+      "id": "337qvx7t",
+      "status": "submitted_for_settlement",
+      "type": "sale",
+      "currencyIsoCode": "USD",
+      "amount": "60.00",
+      "amountRequested": "60.00",
+      "merchantAccountId": "appxapi",
+      "subMerchantAccountId": null,
+      "masterMerchantAccountId": null,
+      "orderId": null,
+      "createdAt": "2023-05-21T20:36:16Z",
+      "updatedAt": "2023-05-21T20:36:17Z",
+      "customer": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "email": null,
+        "website": null,
+        "phone": null,
+        "fax": null
+      },
+      "billing": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "refundId": null,
+      "refundIds": [],
+      "refundedTransactionId": null,
+      "partialSettlementTransactionIds": [],
+      "authorizedTransactionId": null,
+      "settlementBatchId": null,
+      "shipping": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "customFields": "",
+      "accountFundingTransaction": false,
+      "avsErrorResponseCode": null,
+      "avsPostalCodeResponseCode": "I",
+      "avsStreetAddressResponseCode": "I",
+      "cvvResponseCode": "M",
+      "gatewayRejectionReason": null,
+      "processorAuthorizationCode": "MV1RK7",
+      "processorResponseCode": "1000",
+      "processorResponseText": "Approved",
+      "additionalProcessorResponse": null,
+      "voiceReferralNumber": null,
+      "purchaseOrderNumber": null,
+      "taxAmount": null,
+      "taxExempt": false,
+      "scaExemptionRequested": null,
+      "processedWithNetworkToken": false,
+      "creditCard": {
+        "token": null,
+        "bin": "424242",
+        "last4": "4242",
+        "cardType": "Visa",
+        "expirationMonth": "12",
+        "expirationYear": "2023",
+        "customerLocation": "US",
+        "cardholderName": null,
+        "imageUrl": "https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox",
+        "isNetworkTokenized": false,
+        "prepaid": "Unknown",
+        "healthcare": "Unknown",
+        "debit": "Unknown",
+        "durbinRegulated": "Unknown",
+        "commercial": "Unknown",
+        "payroll": "Unknown",
+        "issuingBank": "Unknown",
+        "countryOfIssuance": "Unknown",
+        "productId": "Unknown",
+        "globalId": null,
+        "graphQLId": null,
+        "accountType": "credit",
+        "uniqueNumberIdentifier": null,
+        "venmoSdk": false,
+        "accountBalance": null,
+        "maskedNumber": "424242******4242",
+        "expirationDate": "12/2023"
+      },
+      "statusHistory": [
+        {
+          "timestamp": "2023-05-21T20:36:17Z",
+          "status": "authorized",
+          "amount": "60.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        },
+        {
+          "timestamp": "2023-05-21T20:36:17Z",
+          "status": "submitted_for_settlement",
+          "amount": "60.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        }
+      ],
+      "planId": null,
+      "subscriptionId": null,
+      "subscription": {
+        "billingPeriodEndDate": null,
+        "billingPeriodStartDate": null
+      },
+      "addOns": [],
+      "discounts": [],
+      "descriptor": {
+        "name": null,
+        "phone": null,
+        "url": null
+      },
+      "recurring": false,
+      "channel": null,
+      "serviceFeeAmount": null,
+      "escrowStatus": null,
+      "disbursementDetails": {
+        "disbursementDate": null,
+        "settlementAmount": null,
+        "settlementCurrencyIsoCode": null,
+        "settlementCurrencyExchangeRate": null,
+        "settlementBaseCurrencyExchangeRate": null,
+        "fundsHeld": null,
+        "success": null
+      },
+      "disputes": [],
+      "achReturnResponses": [],
+      "authorizationAdjustments": [],
+      "paymentInstrumentType": "credit_card",
+      "processorSettlementResponseCode": "",
+      "processorSettlementResponseText": "",
+      "networkResponseCode": "XX",
+      "networkResponseText": "sample network response text",
+      "merchantAdviceCode": null,
+      "merchantAdviceCodeText": null,
+      "threeDSecureInfo": null,
+      "shipsFromPostalCode": null,
+      "shippingAmount": null,
+      "discountAmount": null,
+      "networkTransactionId": "020230521203617",
+      "processorResponseType": "approved",
+      "authorizationExpiresAt": "2023-05-28T20:36:17Z",
+      "retryIds": [],
+      "retriedTransactionId": null,
+      "refundGlobalIds": [],
+      "partialSettlementTransactionGlobalIds": [],
+      "refundedTransactionGlobalId": null,
+      "authorizedTransactionGlobalId": null,
+      "globalId": "dHJhbnNhY3Rpb25fMzM3cXZ4N3Q",
+      "graphQLId": "dHJhbnNhY3Rpb25fMzM3cXZ4N3Q",
+      "retryGlobalIds": [],
+      "retriedTransactionGlobalId": null,
+      "retrievalReferenceNumber": "1234567",
+      "achReturnCode": null,
+      "installmentCount": null,
+      "installments": [],
+      "refundedInstallments": [],
+      "responseEmvData": null,
+      "acquirerReferenceNumber": null,
+      "merchantIdentificationNumber": "123456789012",
+      "terminalIdentificationNumber": "00000001",
+      "merchantName": "DESCRIPTORNAME",
+      "merchantAddress": {
+        "streetAddress": "",
+        "locality": "Braintree",
+        "region": "MA",
+        "postalCode": "02184",
+        "phone": "5555555555"
+      },
+      "pinVerified": false,
+      "debitNetwork": null,
+      "processingMode": null,
+      "paymentReceipt": {
+        "id": "337qvx7t",
+        "globalId": "dHJhbnNhY3Rpb25fMzM3cXZ4N3Q",
+        "amount": "60.00",
+        "currencyIsoCode": "USD",
+        "processorResponseCode": "1000",
+        "processorResponseText": "Approved",
+        "processorAuthorizationCode": "MV1RK7",
+        "merchantName": "DESCRIPTORNAME",
+        "merchantAddress": {
+          "streetAddress": "",
+          "locality": "Braintree",
+          "region": "MA",
+          "postalCode": "02184",
+          "phone": "5555555555"
+        },
+        "merchantIdentificationNumber": "123456789012",
+        "terminalIdentificationNumber": "00000001",
+        "type": "sale",
+        "pinVerified": false,
+        "processingMode": null,
+        "networkIdentificationCode": null,
+        "cardType": "Visa",
+        "cardLast4": "4242",
+        "accountBalance": null
+      },
+      "paypalAccount": {},
+      "paypalHereDetails": {},
+      "localPayment": {},
+      "applePayCard": {},
+      "androidPayCard": {},
+      "visaCheckoutCard": {},
+      "samsungPayCard": {}
+    },
+    "success": true
+  },
+  "buyer": {
+    "$oid": "646a777636669fee222563e5"
+  },
+  "status": "Delivered",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684701369302"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1684701559106"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646a9134c79e40a7ca68852f"
+  },
+  "products": [
+    {
+      "$oid": "646a907a895182ee30c87556"
+    }
+  ],
+  "payment": {
+    "transaction": {
+      "id": "gzv3fwdq",
+      "status": "submitted_for_settlement",
+      "type": "sale",
+      "currencyIsoCode": "USD",
+      "amount": "120.00",
+      "amountRequested": "120.00",
+      "merchantAccountId": "appxapi",
+      "subMerchantAccountId": null,
+      "masterMerchantAccountId": null,
+      "orderId": null,
+      "createdAt": "2023-05-21T21:46:28Z",
+      "updatedAt": "2023-05-21T21:46:28Z",
+      "customer": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "email": null,
+        "website": null,
+        "phone": null,
+        "fax": null
+      },
+      "billing": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "refundId": null,
+      "refundIds": [],
+      "refundedTransactionId": null,
+      "partialSettlementTransactionIds": [],
+      "authorizedTransactionId": null,
+      "settlementBatchId": null,
+      "shipping": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "customFields": "",
+      "accountFundingTransaction": false,
+      "avsErrorResponseCode": null,
+      "avsPostalCodeResponseCode": "I",
+      "avsStreetAddressResponseCode": "I",
+      "cvvResponseCode": "M",
+      "gatewayRejectionReason": null,
+      "processorAuthorizationCode": "L7C0DN",
+      "processorResponseCode": "1000",
+      "processorResponseText": "Approved",
+      "additionalProcessorResponse": null,
+      "voiceReferralNumber": null,
+      "purchaseOrderNumber": null,
+      "taxAmount": null,
+      "taxExempt": false,
+      "scaExemptionRequested": null,
+      "processedWithNetworkToken": false,
+      "creditCard": {
+        "token": null,
+        "bin": "424242",
+        "last4": "4242",
+        "cardType": "Visa",
+        "expirationMonth": "12",
+        "expirationYear": "2025",
+        "customerLocation": "US",
+        "cardholderName": null,
+        "imageUrl": "https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox",
+        "isNetworkTokenized": false,
+        "prepaid": "Unknown",
+        "healthcare": "Unknown",
+        "debit": "Unknown",
+        "durbinRegulated": "Unknown",
+        "commercial": "Unknown",
+        "payroll": "Unknown",
+        "issuingBank": "Unknown",
+        "countryOfIssuance": "Unknown",
+        "productId": "Unknown",
+        "globalId": null,
+        "graphQLId": null,
+        "accountType": "credit",
+        "uniqueNumberIdentifier": null,
+        "venmoSdk": false,
+        "accountBalance": null,
+        "maskedNumber": "424242******4242",
+        "expirationDate": "12/2025"
+      },
+      "statusHistory": [
+        {
+          "timestamp": "2023-05-21T21:46:28Z",
+          "status": "authorized",
+          "amount": "120.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        },
+        {
+          "timestamp": "2023-05-21T21:46:28Z",
+          "status": "submitted_for_settlement",
+          "amount": "120.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        }
+      ],
+      "planId": null,
+      "subscriptionId": null,
+      "subscription": {
+        "billingPeriodEndDate": null,
+        "billingPeriodStartDate": null
+      },
+      "addOns": [],
+      "discounts": [],
+      "descriptor": {
+        "name": null,
+        "phone": null,
+        "url": null
+      },
+      "recurring": false,
+      "channel": null,
+      "serviceFeeAmount": null,
+      "escrowStatus": null,
+      "disbursementDetails": {
+        "disbursementDate": null,
+        "settlementAmount": null,
+        "settlementCurrencyIsoCode": null,
+        "settlementCurrencyExchangeRate": null,
+        "settlementBaseCurrencyExchangeRate": null,
+        "fundsHeld": null,
+        "success": null
+      },
+      "disputes": [],
+      "achReturnResponses": [],
+      "authorizationAdjustments": [],
+      "paymentInstrumentType": "credit_card",
+      "processorSettlementResponseCode": "",
+      "processorSettlementResponseText": "",
+      "networkResponseCode": "XX",
+      "networkResponseText": "sample network response text",
+      "merchantAdviceCode": null,
+      "merchantAdviceCodeText": null,
+      "threeDSecureInfo": null,
+      "shipsFromPostalCode": null,
+      "shippingAmount": null,
+      "discountAmount": null,
+      "networkTransactionId": "020230521214628",
+      "processorResponseType": "approved",
+      "authorizationExpiresAt": "2023-05-28T21:46:28Z",
+      "retryIds": [],
+      "retriedTransactionId": null,
+      "refundGlobalIds": [],
+      "partialSettlementTransactionGlobalIds": [],
+      "refundedTransactionGlobalId": null,
+      "authorizedTransactionGlobalId": null,
+      "globalId": "dHJhbnNhY3Rpb25fZ3p2M2Z3ZHE",
+      "graphQLId": "dHJhbnNhY3Rpb25fZ3p2M2Z3ZHE",
+      "retryGlobalIds": [],
+      "retriedTransactionGlobalId": null,
+      "retrievalReferenceNumber": "1234567",
+      "achReturnCode": null,
+      "installmentCount": null,
+      "installments": [],
+      "refundedInstallments": [],
+      "responseEmvData": null,
+      "acquirerReferenceNumber": null,
+      "merchantIdentificationNumber": "123456789012",
+      "terminalIdentificationNumber": "00000001",
+      "merchantName": "DESCRIPTORNAME",
+      "merchantAddress": {
+        "streetAddress": "",
+        "locality": "Braintree",
+        "region": "MA",
+        "postalCode": "02184",
+        "phone": "5555555555"
+      },
+      "pinVerified": false,
+      "debitNetwork": null,
+      "processingMode": null,
+      "paymentReceipt": {
+        "id": "gzv3fwdq",
+        "globalId": "dHJhbnNhY3Rpb25fZ3p2M2Z3ZHE",
+        "amount": "120.00",
+        "currencyIsoCode": "USD",
+        "processorResponseCode": "1000",
+        "processorResponseText": "Approved",
+        "processorAuthorizationCode": "L7C0DN",
+        "merchantName": "DESCRIPTORNAME",
+        "merchantAddress": {
+          "streetAddress": "",
+          "locality": "Braintree",
+          "region": "MA",
+          "postalCode": "02184",
+          "phone": "5555555555"
+        },
+        "merchantIdentificationNumber": "123456789012",
+        "terminalIdentificationNumber": "00000001",
+        "type": "sale",
+        "pinVerified": false,
+        "processingMode": null,
+        "networkIdentificationCode": null,
+        "cardType": "Visa",
+        "cardLast4": "4242",
+        "accountBalance": null
+      },
+      "paypalAccount": {},
+      "paypalHereDetails": {},
+      "localPayment": {},
+      "applePayCard": {},
+      "androidPayCard": {},
+      "visaCheckoutCard": {},
+      "samsungPayCard": {}
+    },
+    "success": true
+  },
+  "buyer": {
+    "$oid": "646a7edd54aea36cc26a4214"
+  },
+  "status": "Shipped",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684705588942"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1684705604594"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646cf9b662faa9b5792a971a"
+  },
+  "products": [
+    {
+      "$oid": "646a9455895182ee30c875ad"
+    }
+  ],
+  "payment": {
+    "transaction": {
+      "id": "1psxt25f",
+      "status": "submitted_for_settlement",
+      "type": "sale",
+      "currencyIsoCode": "USD",
+      "amount": "300.00",
+      "amountRequested": "300.00",
+      "merchantAccountId": "appxapi",
+      "subMerchantAccountId": null,
+      "masterMerchantAccountId": null,
+      "orderId": null,
+      "createdAt": "2023-05-23T17:36:52Z",
+      "updatedAt": "2023-05-23T17:36:52Z",
+      "customer": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "email": null,
+        "website": null,
+        "phone": null,
+        "fax": null
+      },
+      "billing": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "refundId": null,
+      "refundIds": [],
+      "refundedTransactionId": null,
+      "partialSettlementTransactionIds": [],
+      "authorizedTransactionId": null,
+      "settlementBatchId": null,
+      "shipping": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "customFields": "",
+      "accountFundingTransaction": false,
+      "avsErrorResponseCode": null,
+      "avsPostalCodeResponseCode": "I",
+      "avsStreetAddressResponseCode": "I",
+      "cvvResponseCode": "M",
+      "gatewayRejectionReason": null,
+      "processorAuthorizationCode": "YS8CT9",
+      "processorResponseCode": "1000",
+      "processorResponseText": "Approved",
+      "additionalProcessorResponse": null,
+      "voiceReferralNumber": null,
+      "purchaseOrderNumber": null,
+      "taxAmount": null,
+      "taxExempt": false,
+      "scaExemptionRequested": null,
+      "processedWithNetworkToken": false,
+      "creditCard": {
+        "token": null,
+        "bin": "424242",
+        "last4": "4242",
+        "cardType": "Visa",
+        "expirationMonth": "12",
+        "expirationYear": "2025",
+        "customerLocation": "US",
+        "cardholderName": null,
+        "imageUrl": "https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox",
+        "isNetworkTokenized": false,
+        "prepaid": "Unknown",
+        "healthcare": "Unknown",
+        "debit": "Unknown",
+        "durbinRegulated": "Unknown",
+        "commercial": "Unknown",
+        "payroll": "Unknown",
+        "issuingBank": "Unknown",
+        "countryOfIssuance": "Unknown",
+        "productId": "Unknown",
+        "globalId": null,
+        "graphQLId": null,
+        "accountType": "credit",
+        "uniqueNumberIdentifier": null,
+        "venmoSdk": false,
+        "accountBalance": null,
+        "maskedNumber": "424242******4242",
+        "expirationDate": "12/2025"
+      },
+      "statusHistory": [
+        {
+          "timestamp": "2023-05-23T17:36:52Z",
+          "status": "authorized",
+          "amount": "300.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        },
+        {
+          "timestamp": "2023-05-23T17:36:52Z",
+          "status": "submitted_for_settlement",
+          "amount": "300.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        }
+      ],
+      "planId": null,
+      "subscriptionId": null,
+      "subscription": {
+        "billingPeriodEndDate": null,
+        "billingPeriodStartDate": null
+      },
+      "addOns": [],
+      "discounts": [],
+      "descriptor": {
+        "name": null,
+        "phone": null,
+        "url": null
+      },
+      "recurring": false,
+      "channel": null,
+      "serviceFeeAmount": null,
+      "escrowStatus": null,
+      "disbursementDetails": {
+        "disbursementDate": null,
+        "settlementAmount": null,
+        "settlementCurrencyIsoCode": null,
+        "settlementCurrencyExchangeRate": null,
+        "settlementBaseCurrencyExchangeRate": null,
+        "fundsHeld": null,
+        "success": null
+      },
+      "disputes": [],
+      "achReturnResponses": [],
+      "authorizationAdjustments": [],
+      "paymentInstrumentType": "credit_card",
+      "processorSettlementResponseCode": "",
+      "processorSettlementResponseText": "",
+      "networkResponseCode": "XX",
+      "networkResponseText": "sample network response text",
+      "merchantAdviceCode": null,
+      "merchantAdviceCodeText": null,
+      "threeDSecureInfo": null,
+      "shipsFromPostalCode": null,
+      "shippingAmount": null,
+      "discountAmount": null,
+      "networkTransactionId": "020230523173652",
+      "processorResponseType": "approved",
+      "authorizationExpiresAt": "2023-05-30T17:36:52Z",
+      "retryIds": [],
+      "retriedTransactionId": null,
+      "refundGlobalIds": [],
+      "partialSettlementTransactionGlobalIds": [],
+      "refundedTransactionGlobalId": null,
+      "authorizedTransactionGlobalId": null,
+      "globalId": "dHJhbnNhY3Rpb25fMXBzeHQyNWY",
+      "graphQLId": "dHJhbnNhY3Rpb25fMXBzeHQyNWY",
+      "retryGlobalIds": [],
+      "retriedTransactionGlobalId": null,
+      "retrievalReferenceNumber": "1234567",
+      "achReturnCode": null,
+      "installmentCount": null,
+      "installments": [],
+      "refundedInstallments": [],
+      "responseEmvData": null,
+      "acquirerReferenceNumber": null,
+      "merchantIdentificationNumber": "123456789012",
+      "terminalIdentificationNumber": "00000001",
+      "merchantName": "DESCRIPTORNAME",
+      "merchantAddress": {
+        "streetAddress": "",
+        "locality": "Braintree",
+        "region": "MA",
+        "postalCode": "02184",
+        "phone": "5555555555"
+      },
+      "pinVerified": false,
+      "debitNetwork": null,
+      "processingMode": null,
+      "paymentReceipt": {
+        "id": "1psxt25f",
+        "globalId": "dHJhbnNhY3Rpb25fMXBzeHQyNWY",
+        "amount": "300.00",
+        "currencyIsoCode": "USD",
+        "processorResponseCode": "1000",
+        "processorResponseText": "Approved",
+        "processorAuthorizationCode": "YS8CT9",
+        "merchantName": "DESCRIPTORNAME",
+        "merchantAddress": {
+          "streetAddress": "",
+          "locality": "Braintree",
+          "region": "MA",
+          "postalCode": "02184",
+          "phone": "5555555555"
+        },
+        "merchantIdentificationNumber": "123456789012",
+        "terminalIdentificationNumber": "00000001",
+        "type": "sale",
+        "pinVerified": false,
+        "processingMode": null,
+        "networkIdentificationCode": null,
+        "cardType": "Visa",
+        "cardLast4": "4242",
+        "accountBalance": null
+      },
+      "paypalAccount": {},
+      "paypalHereDetails": {},
+      "localPayment": {},
+      "applePayCard": {},
+      "androidPayCard": {},
+      "visaCheckoutCard": {},
+      "samsungPayCard": {}
+    },
+    "success": true
+  },
+  "buyer": {
+    "$oid": "646cf7ee62faa9b5792a9706"
+  },
+  "status": "Delivered",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684863414214"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1684864401805"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646cfd1d62faa9b5792a977a"
+  },
+  "products": [
+    {
+      "$oid": "646a9455895182ee30c875ad"
+    },
+    {
+      "$oid": "646a9357895182ee30c8759f"
+    }
+  ],
+  "payment": {
+    "transaction": {
+      "id": "jfth7qh2",
+      "status": "submitted_for_settlement",
+      "type": "sale",
+      "currencyIsoCode": "USD",
+      "amount": "630.00",
+      "amountRequested": "630.00",
+      "merchantAccountId": "appxapi",
+      "subMerchantAccountId": null,
+      "masterMerchantAccountId": null,
+      "orderId": null,
+      "createdAt": "2023-05-23T17:51:24Z",
+      "updatedAt": "2023-05-23T17:51:24Z",
+      "customer": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "email": null,
+        "website": null,
+        "phone": null,
+        "fax": null
+      },
+      "billing": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "refundId": null,
+      "refundIds": [],
+      "refundedTransactionId": null,
+      "partialSettlementTransactionIds": [],
+      "authorizedTransactionId": null,
+      "settlementBatchId": null,
+      "shipping": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "customFields": "",
+      "accountFundingTransaction": false,
+      "avsErrorResponseCode": null,
+      "avsPostalCodeResponseCode": "I",
+      "avsStreetAddressResponseCode": "I",
+      "cvvResponseCode": "M",
+      "gatewayRejectionReason": null,
+      "processorAuthorizationCode": "6CMKGQ",
+      "processorResponseCode": "1000",
+      "processorResponseText": "Approved",
+      "additionalProcessorResponse": null,
+      "voiceReferralNumber": null,
+      "purchaseOrderNumber": null,
+      "taxAmount": null,
+      "taxExempt": false,
+      "scaExemptionRequested": null,
+      "processedWithNetworkToken": false,
+      "creditCard": {
+        "token": null,
+        "bin": "424242",
+        "last4": "4242",
+        "cardType": "Visa",
+        "expirationMonth": "12",
+        "expirationYear": "2025",
+        "customerLocation": "US",
+        "cardholderName": null,
+        "imageUrl": "https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox",
+        "isNetworkTokenized": false,
+        "prepaid": "Unknown",
+        "healthcare": "Unknown",
+        "debit": "Unknown",
+        "durbinRegulated": "Unknown",
+        "commercial": "Unknown",
+        "payroll": "Unknown",
+        "issuingBank": "Unknown",
+        "countryOfIssuance": "Unknown",
+        "productId": "Unknown",
+        "globalId": null,
+        "graphQLId": null,
+        "accountType": "credit",
+        "uniqueNumberIdentifier": null,
+        "venmoSdk": false,
+        "accountBalance": null,
+        "maskedNumber": "424242******4242",
+        "expirationDate": "12/2025"
+      },
+      "statusHistory": [
+        {
+          "timestamp": "2023-05-23T17:51:24Z",
+          "status": "authorized",
+          "amount": "630.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        },
+        {
+          "timestamp": "2023-05-23T17:51:24Z",
+          "status": "submitted_for_settlement",
+          "amount": "630.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        }
+      ],
+      "planId": null,
+      "subscriptionId": null,
+      "subscription": {
+        "billingPeriodEndDate": null,
+        "billingPeriodStartDate": null
+      },
+      "addOns": [],
+      "discounts": [],
+      "descriptor": {
+        "name": null,
+        "phone": null,
+        "url": null
+      },
+      "recurring": false,
+      "channel": null,
+      "serviceFeeAmount": null,
+      "escrowStatus": null,
+      "disbursementDetails": {
+        "disbursementDate": null,
+        "settlementAmount": null,
+        "settlementCurrencyIsoCode": null,
+        "settlementCurrencyExchangeRate": null,
+        "settlementBaseCurrencyExchangeRate": null,
+        "fundsHeld": null,
+        "success": null
+      },
+      "disputes": [],
+      "achReturnResponses": [],
+      "authorizationAdjustments": [],
+      "paymentInstrumentType": "credit_card",
+      "processorSettlementResponseCode": "",
+      "processorSettlementResponseText": "",
+      "networkResponseCode": "XX",
+      "networkResponseText": "sample network response text",
+      "merchantAdviceCode": null,
+      "merchantAdviceCodeText": null,
+      "threeDSecureInfo": null,
+      "shipsFromPostalCode": null,
+      "shippingAmount": null,
+      "discountAmount": null,
+      "networkTransactionId": "020230523175124",
+      "processorResponseType": "approved",
+      "authorizationExpiresAt": "2023-05-30T17:51:24Z",
+      "retryIds": [],
+      "retriedTransactionId": null,
+      "refundGlobalIds": [],
+      "partialSettlementTransactionGlobalIds": [],
+      "refundedTransactionGlobalId": null,
+      "authorizedTransactionGlobalId": null,
+      "globalId": "dHJhbnNhY3Rpb25famZ0aDdxaDI",
+      "graphQLId": "dHJhbnNhY3Rpb25famZ0aDdxaDI",
+      "retryGlobalIds": [],
+      "retriedTransactionGlobalId": null,
+      "retrievalReferenceNumber": "1234567",
+      "achReturnCode": null,
+      "installmentCount": null,
+      "installments": [],
+      "refundedInstallments": [],
+      "responseEmvData": null,
+      "acquirerReferenceNumber": null,
+      "merchantIdentificationNumber": "123456789012",
+      "terminalIdentificationNumber": "00000001",
+      "merchantName": "DESCRIPTORNAME",
+      "merchantAddress": {
+        "streetAddress": "",
+        "locality": "Braintree",
+        "region": "MA",
+        "postalCode": "02184",
+        "phone": "5555555555"
+      },
+      "pinVerified": false,
+      "debitNetwork": null,
+      "processingMode": null,
+      "paymentReceipt": {
+        "id": "jfth7qh2",
+        "globalId": "dHJhbnNhY3Rpb25famZ0aDdxaDI",
+        "amount": "630.00",
+        "currencyIsoCode": "USD",
+        "processorResponseCode": "1000",
+        "processorResponseText": "Approved",
+        "processorAuthorizationCode": "6CMKGQ",
+        "merchantName": "DESCRIPTORNAME",
+        "merchantAddress": {
+          "streetAddress": "",
+          "locality": "Braintree",
+          "region": "MA",
+          "postalCode": "02184",
+          "phone": "5555555555"
+        },
+        "merchantIdentificationNumber": "123456789012",
+        "terminalIdentificationNumber": "00000001",
+        "type": "sale",
+        "pinVerified": false,
+        "processingMode": null,
+        "networkIdentificationCode": null,
+        "cardType": "Visa",
+        "cardLast4": "4242",
+        "accountBalance": null
+      },
+      "paypalAccount": {},
+      "paypalHereDetails": {},
+      "localPayment": {},
+      "applePayCard": {},
+      "androidPayCard": {},
+      "visaCheckoutCard": {},
+      "samsungPayCard": {}
+    },
+    "success": true
+  },
+  "buyer": {
+    "$oid": "646cf7ee62faa9b5792a9706"
+  },
+  "status": "Shipped",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684864285489"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1685042995432"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646dd8f4680fe94bfdc77ffa"
+  },
+  "products": [
+    {
+      "$oid": "646a9357895182ee30c8759f"
+    },
+    {
+      "$oid": "646a9357895182ee30c8759f"
+    },
+    {
+      "$oid": "646a9297895182ee30c87583"
+    },
+    {
+      "$oid": "646a91a6895182ee30c8756d"
+    },
+    {
+      "$oid": "646a9117895182ee30c87563"
+    }
+  ],
+  "payment": {
+    "errors": {
+      "validationErrors": {},
+      "errorCollections": {
+        "transaction": {
+          "validationErrors": {},
+          "errorCollections": {
+            "creditCard": {
+              "validationErrors": {
+                "number": [
+                  {
+                    "attribute": "number",
+                    "code": "81717",
+                    "message": "Credit card number is not an accepted test number."
+                  }
+                ]
+              },
+              "errorCollections": {}
+            }
+          }
+        }
+      }
+    },
+    "params": {
+      "transaction": {
+        "amount": "1275",
+        "paymentMethodNonce": "tokencc_bh_dvrk2d_hmvj5p_sgn3qy_4f5tyv_cz3",
+        "options": {
+          "submitForSettlement": "true"
+        },
+        "type": "sale"
+      }
+    },
+    "message": "Credit card number is not an accepted test number.",
+    "success": false
+  },
+  "buyer": {
+    "$oid": "646dd8a0680fe94bfdc77fe7"
+  },
+  "status": "Cancel",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684920564586"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1685042987412"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646fb7c05352b3fe5ebfa8c3"
+  },
+  "products": [
+    {
+      "$oid": "646a9455895182ee30c875ad"
+    }
+  ],
+  "payment": {
+    "transaction": {
+      "id": "37gaz7px",
+      "status": "submitted_for_settlement",
+      "type": "sale",
+      "currencyIsoCode": "USD",
+      "amount": "300.00",
+      "amountRequested": "300.00",
+      "merchantAccountId": "appxapi",
+      "subMerchantAccountId": null,
+      "masterMerchantAccountId": null,
+      "orderId": null,
+      "createdAt": "2023-05-25T19:32:29Z",
+      "updatedAt": "2023-05-25T19:32:29Z",
+      "customer": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "email": null,
+        "website": null,
+        "phone": null,
+        "fax": null
+      },
+      "billing": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "refundId": null,
+      "refundIds": [],
+      "refundedTransactionId": null,
+      "partialSettlementTransactionIds": [],
+      "authorizedTransactionId": null,
+      "settlementBatchId": null,
+      "shipping": {
+        "id": null,
+        "firstName": null,
+        "lastName": null,
+        "company": null,
+        "streetAddress": null,
+        "extendedAddress": null,
+        "locality": null,
+        "region": null,
+        "postalCode": null,
+        "countryName": null,
+        "countryCodeAlpha2": null,
+        "countryCodeAlpha3": null,
+        "countryCodeNumeric": null
+      },
+      "customFields": "",
+      "accountFundingTransaction": false,
+      "avsErrorResponseCode": null,
+      "avsPostalCodeResponseCode": "I",
+      "avsStreetAddressResponseCode": "I",
+      "cvvResponseCode": "M",
+      "gatewayRejectionReason": null,
+      "processorAuthorizationCode": "P12DJ5",
+      "processorResponseCode": "1000",
+      "processorResponseText": "Approved",
+      "additionalProcessorResponse": null,
+      "voiceReferralNumber": null,
+      "purchaseOrderNumber": null,
+      "taxAmount": null,
+      "taxExempt": false,
+      "scaExemptionRequested": null,
+      "processedWithNetworkToken": false,
+      "creditCard": {
+        "token": null,
+        "bin": "424242",
+        "last4": "4242",
+        "cardType": "Visa",
+        "expirationMonth": "01",
+        "expirationYear": "2025",
+        "customerLocation": "US",
+        "cardholderName": null,
+        "imageUrl": "https://assets.braintreegateway.com/payment_method_logo/visa.png?environment=sandbox",
+        "isNetworkTokenized": false,
+        "prepaid": "Unknown",
+        "healthcare": "Unknown",
+        "debit": "Unknown",
+        "durbinRegulated": "Unknown",
+        "commercial": "Unknown",
+        "payroll": "Unknown",
+        "issuingBank": "Unknown",
+        "countryOfIssuance": "Unknown",
+        "productId": "Unknown",
+        "globalId": null,
+        "graphQLId": null,
+        "accountType": "credit",
+        "uniqueNumberIdentifier": null,
+        "venmoSdk": false,
+        "accountBalance": null,
+        "maskedNumber": "424242******4242",
+        "expirationDate": "01/2025"
+      },
+      "statusHistory": [
+        {
+          "timestamp": "2023-05-25T19:32:29Z",
+          "status": "authorized",
+          "amount": "300.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        },
+        {
+          "timestamp": "2023-05-25T19:32:29Z",
+          "status": "submitted_for_settlement",
+          "amount": "300.00",
+          "user": "poraxpor",
+          "transactionSource": "api"
+        }
+      ],
+      "planId": null,
+      "subscriptionId": null,
+      "subscription": {
+        "billingPeriodEndDate": null,
+        "billingPeriodStartDate": null
+      },
+      "addOns": [],
+      "discounts": [],
+      "descriptor": {
+        "name": null,
+        "phone": null,
+        "url": null
+      },
+      "recurring": false,
+      "channel": null,
+      "serviceFeeAmount": null,
+      "escrowStatus": null,
+      "disbursementDetails": {
+        "disbursementDate": null,
+        "settlementAmount": null,
+        "settlementCurrencyIsoCode": null,
+        "settlementCurrencyExchangeRate": null,
+        "settlementBaseCurrencyExchangeRate": null,
+        "fundsHeld": null,
+        "success": null
+      },
+      "disputes": [],
+      "achReturnResponses": [],
+      "authorizationAdjustments": [],
+      "paymentInstrumentType": "credit_card",
+      "processorSettlementResponseCode": "",
+      "processorSettlementResponseText": "",
+      "networkResponseCode": "XX",
+      "networkResponseText": "sample network response text",
+      "merchantAdviceCode": null,
+      "merchantAdviceCodeText": null,
+      "threeDSecureInfo": null,
+      "shipsFromPostalCode": null,
+      "shippingAmount": null,
+      "discountAmount": null,
+      "networkTransactionId": "020230525193229",
+      "processorResponseType": "approved",
+      "authorizationExpiresAt": "2023-06-01T19:32:29Z",
+      "retryIds": [],
+      "retriedTransactionId": null,
+      "refundGlobalIds": [],
+      "partialSettlementTransactionGlobalIds": [],
+      "refundedTransactionGlobalId": null,
+      "authorizedTransactionGlobalId": null,
+      "globalId": "dHJhbnNhY3Rpb25fMzdnYXo3cHg",
+      "graphQLId": "dHJhbnNhY3Rpb25fMzdnYXo3cHg",
+      "retryGlobalIds": [],
+      "retriedTransactionGlobalId": null,
+      "retrievalReferenceNumber": "1234567",
+      "achReturnCode": null,
+      "installmentCount": null,
+      "installments": [],
+      "refundedInstallments": [],
+      "responseEmvData": null,
+      "acquirerReferenceNumber": null,
+      "merchantIdentificationNumber": "123456789012",
+      "terminalIdentificationNumber": "00000001",
+      "merchantName": "DESCRIPTORNAME",
+      "merchantAddress": {
+        "streetAddress": "",
+        "locality": "Braintree",
+        "region": "MA",
+        "postalCode": "02184",
+        "phone": "5555555555"
+      },
+      "pinVerified": false,
+      "debitNetwork": null,
+      "processingMode": null,
+      "paymentReceipt": {
+        "id": "37gaz7px",
+        "globalId": "dHJhbnNhY3Rpb25fMzdnYXo3cHg",
+        "amount": "300.00",
+        "currencyIsoCode": "USD",
+        "processorResponseCode": "1000",
+        "processorResponseText": "Approved",
+        "processorAuthorizationCode": "P12DJ5",
+        "merchantName": "DESCRIPTORNAME",
+        "merchantAddress": {
+          "streetAddress": "",
+          "locality": "Braintree",
+          "region": "MA",
+          "postalCode": "02184",
+          "phone": "5555555555"
+        },
+        "merchantIdentificationNumber": "123456789012",
+        "terminalIdentificationNumber": "00000001",
+        "type": "sale",
+        "pinVerified": false,
+        "processingMode": null,
+        "networkIdentificationCode": null,
+        "cardType": "Visa",
+        "cardLast4": "4242",
+        "accountBalance": null
+      },
+      "paypalAccount": {},
+      "paypalHereDetails": {},
+      "localPayment": {},
+      "applePayCard": {},
+      "androidPayCard": {},
+      "visaCheckoutCard": {},
+      "samsungPayCard": {}
+    },
+    "success": true
+  },
+  "buyer": {
+    "$oid": "646a777636669fee222563e5"
+  },
+  "status": "Delivered",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1685043136938"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1685043202683"
+    }
+  },
+  "__v": 0
+}]
