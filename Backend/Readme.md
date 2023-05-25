@@ -29,6 +29,18 @@ Start the backend application.
 
 Use [http://localhost:4000](http://localhost:4000) to test APIs.
 
+If you want to setup backend with our data then you can use [data dump](../Assets/MongoDB_Datadump/) make sure that collection are listed as below
+
+```
+GearIN
+    - categories
+    - orders
+    - products
+    - users
+```
+
+*Note: for username and passwords evict ".com/.domain" for email and that will passwords for example "test@test.com" pass will be "test@test"*
+
 ## Folder Structure
 
 ```

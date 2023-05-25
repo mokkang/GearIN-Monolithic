@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "646a7ae736669fee22256421"
+  },
+  "name": "Romance",
+  "slug": "romance",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646a7af036669fee22256426"
+  },
+  "name": "Non-fiction",
+  "slug": "non-fiction",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646a7af836669fee2225642b"
+  },
+  "name": "Fiction",
+  "slug": "fiction",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646a7b0036669fee22256430"
+  },
+  "name": "Historical Fiction",
+  "slug": "historical-fiction",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646a7b6c36669fee22256444"
+  },
+  "name": "Self-Help Book",
+  "slug": "self-help-book",
+  "__v": 0
+}]

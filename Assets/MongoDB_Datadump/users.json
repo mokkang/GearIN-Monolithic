@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "6469fb51cfe1279123c82220"
+  },
+  "name": "test",
+  "email": "test@test.com",
+  "password": "$2b$10$BUFp.lZTR/gIgJX.YEL8gexvbIwMymovPRi6AXWAMg/RARSpt.bFm",
+  "phone": "123456789",
+  "address": "earth",
+  "answer": "testtest",
+  "role": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684667217536"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1685048552956"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6469fbb491b202d36d80ea29"
+  },
+  "name": "test2",
+  "email": "test2@test.com",
+  "password": "$2b$10$eKG/O6hrppoMA2ZCpktD2eEwwiYhA11QUOK30OohyvHZSdBgnkuKq",
+  "phone": "123456789",
+  "address": "earth",
+  "answer": "testtest",
+  "role": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684667316335"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1685048580276"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6469fd74824156032c9d20c9"
+  },
+  "name": "test3",
+  "email": "test3@test.com",
+  "password": "$2b$10$/ETYZggplZsWnwwJwGX7Ou0Zt58KaGGN.eysH/r/2g5byrH61B0tO",
+  "phone": "123456789",
+  "address": "earth",
+  "answer": "testtest",
+  "role": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684667764952"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1685048612744"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646a0d3d0e4fb805cfa51175"
+  },
+  "name": "apptest1",
+  "email": "apptest1@test.com",
+  "password": "$2b$10$6UokoWTjenRJ5T8EIHdStOPm/7SWU2rIC23FKMe9qL5ZEq/xb04hO",
+  "phone": "123456789",
+  "address": "earth",
+  "answer": "test",
+  "role": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684671805825"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1685048664246"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "646a777636669fee222563e5"
+  },
+  "name": "GearIN_Admin",
+  "email": "admin@gear.in",
+  "password": "$2b$10$0lfVQpUTKgUCqmSkoLyyQu1oD/Mmn6lDf6l94PGbrBIyMTQ0TmmMi",
+  "phone": "123456789",
+  "address": "Earth",
+  "answer": "Earth",
+  "role": 1,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684698998282"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1685048492480"
+    }
+  },
+  "__v": 0
+}]
