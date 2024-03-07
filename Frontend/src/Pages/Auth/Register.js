@@ -29,7 +29,8 @@ const Register = () => {
         toast.success(res.data && res.data.message);
         navigate("/login");
       } else {
-        toast.error(res.data.message);
+        const escapedMessage = res.data.message.replace(/[\n]/g, '\\n').replace(/[\r]/g, '\\r');
+        toast.error(escapedMessage);
       }
     } catch (error) {
       console.log(error);

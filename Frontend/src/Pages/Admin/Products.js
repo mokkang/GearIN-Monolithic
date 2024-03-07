@@ -39,6 +39,8 @@ const Products = () => {
               >
                 <div className="card m-2" style={{ width: "18rem" }}>
                   <img
+                  alt={DOMPurify.sanitize(p.name)}
+                  alt={DOMPurify.sanitize(p.name)}
                     src={`http://localhost:4000/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}

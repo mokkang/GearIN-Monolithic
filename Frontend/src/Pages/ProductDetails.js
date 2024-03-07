@@ -44,7 +44,8 @@ const ProductDetails = () => {
     <Layout>
       <div className="row container product-details background">
         <div className="col-md-6">
-          <img
+          DOMPurify.sanitize(
+          DOMPurify.sanitize(
             src={`http://localhost:4000/api/v1/product/product-photo/${product._id}`}
             className="card-img-top"
             alt={product.name}
@@ -89,6 +90,7 @@ const ProductDetails = () => {
           {relatedProducts?.map((p) => (
             <div className="card m-2" key={p._id}>
               <img
+              className={DOMPurify.sanitize(p.name)}
                 src={`http://localhost:4000/api/v1/product/product-photo/${p._id}`}
                 className="card-img-top"
                 alt={p.name}

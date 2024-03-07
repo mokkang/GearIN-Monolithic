@@ -102,7 +102,8 @@ const CartPage = () => {
               {cart?.map((p) => (
                 <div className="row card flex-row" key={p._id}>
                   <div className="col-md-4">
-                    <img
+                    src={DOMPurify.sanitize((src))}
+                    src={DOMPurify.sanitize((src))}
                       src={`http://localhost:4000/api/v1/product/product-photo/${p._id}`}
                       className="card-img-top"
                       alt={p.name}

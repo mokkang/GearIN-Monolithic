@@ -156,7 +156,8 @@ const HomePage = () => {
             <div className="d-flex flex-wrap">
               {products?.map((p) => (
                 <div className="card m-2" key={p._id}>
-                  <img
+                  <img src{DOMPurify.sanitize(p.name)}
+                  alt={DOMPurify.sanitize(p.name)}
                     src={`http://localhost:4000/api/v1/product/product-photo/${p._id}`}
                     className="card-img-top"
                     alt={p.name}

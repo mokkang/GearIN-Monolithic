@@ -152,7 +152,8 @@ const UpdateProduct = () => {
                   </div>
                 ) : (
                   <div className="text-center">
-                    <img
+                    DOMPurify.sanitize(
+                    img
                       src={`http://localhost:4000/api/v1/product/product-photo/${id}`}
                       alt="product_photo"
                       height={"200px"}

@@ -35,7 +35,7 @@ const Profile = () => {
         address,
       });
       if (data?.errro) {
-        toast.error(data?.error);
+        toast.error(data?.error.replace(/[\n]/g, '\\n').replace(/[\r]/g, '\\r'));
       } else {
         setAuth({ ...auth, user: data?.updatedUser });
         let ls = localStorage.getItem("auth");
