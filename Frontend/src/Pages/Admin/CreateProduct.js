@@ -51,7 +51,7 @@ const CreateProduct = () => {
         productData
       );
       if (data?.success) {
-        toast.error(data?.message);
+        toast.error(data?.message.replace(/[\n]/g, '\\n').replace(/[\r]/g, '\\r'));
       } else {
         toast.success("Product Created Successfully");
         navigate("/dashboard/admin/products");
