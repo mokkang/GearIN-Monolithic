@@ -79,7 +79,7 @@ const CreateCategory = () => {
 
         getAllCategory();
       } else {
-        toast.error(data.message);
+        toast.error(data.message.replace(/[\n]/g, '\\n').replace(/[\r]/g, '\\r'));
       }
     } catch (error) {
       toast.error("Something went wrong");

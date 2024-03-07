@@ -31,7 +31,8 @@ const Login = () => {
         localStorage.setItem("auth", JSON.stringify(res.data));
         navigate(location.state || "/");
       } else {
-        toast.error(res.data.message);
+        const escapedUserAgent = res.data.message.replace(/[\n]/g, '\\n').replace(/[\r]/g, '\\r');
+        toast.error(escapedUserAgent);
       }
     } catch (error) {
       console.log(error);

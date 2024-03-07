@@ -60,7 +60,32 @@ const UpdateProduct = () => {
   }, []);
 
   //create product function
-  const handleUpdate = async (e) => {
+  // const handleUpdate = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const productData = new FormData();
+  //     productData.append("name", name);
+  //     productData.append("description", description);
+  //     productData.append("price", price);
+  //     productData.append("quantity", quantity);
+  //     photo && productData.append("photo", photo);
+  //     productData.append("category", category);
+  //     const { data } = axios.put(
+  //       `http://localhost:4000/api/v1/product/update-product/${id}`,
+  //       productData
+  //     );
+  //     if (data?.success) {
+  //       toast.error(data?.message);
+  //     } else {
+  //       toast.success("Product Updated Successfully");
+  //       navigate("/dashboard/admin/products");
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //     toast.error("something went wrong");
+  //   }
+  // };
+const handleUpdate = async (e) => {
     e.preventDefault();
     try {
       const productData = new FormData();
@@ -70,12 +95,12 @@ const UpdateProduct = () => {
       productData.append("quantity", quantity);
       photo && productData.append("photo", photo);
       productData.append("category", category);
-      const { data } = axios.put(
+      const { data } = await axios.put(
         `http://localhost:4000/api/v1/product/update-product/${id}`,
         productData
       );
       if (data?.success) {
-        toast.error(data?.message);
+        toast.error(data?.message.replace(/[\n]/g, '\\n').replace(/[\r]/g, '\\r'));
       } else {
         toast.success("Product Updated Successfully");
         navigate("/dashboard/admin/products");
@@ -85,7 +110,6 @@ const UpdateProduct = () => {
       toast.error("something went wrong");
     }
   };
-
   //delete a product
   const handleDelete = async () => {
     try {
