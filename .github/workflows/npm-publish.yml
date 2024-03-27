@@ -1,0 +1,62 @@
+# test of policy scan issue importer
+ 
+name: Policy scan Issue importer (assumes build)
+
+# on: [push, pull_request, workflow_dispatch]
+#  #on: gollum          # sort of a dummy to prevent this from running
+on: 
+ push:
+jobs:
+  get-policy-flaws:
+    runs-on: maven-latest 
+    container: 
+      image: veracode/api-wrapper-java:latest
+    steps:
+      # Note: this will likely fail if there are more than 500 flaws, due to Veracode results limiting
+      #   (would need a more elaborate method)
+      - name: Break the Build
+        run: |
+          export VERACODE_API_KEY_ID=${{ secrets.VERACODE_API_ID }}
+          export VERACODE_API_KEY_SECRET=${{ secrets.VERACODE_API_KEY }}
+          java -jar /opt/veracode/api-wrapper.jar -action passfail VeraDemo
+        #   curl -fsS https://tools.veracode.com/veracode-cli/install | sh
+        #   ./veracode package -s . -a 
+        # java -jar /opt/luser/api-wrapper-java.
+#          ./veracode scan --source https://github.com/mokkang/NodeGoat --type repo --format json --output ./nodegoat_container.json
+#          ./veracode sbom --source https://github.com/mokkang/NodeGoat --type repo --format json --output ./nodegoat_sbom.json
+#        # ./veracode scan --source https://github.com/veracode/verademo-dotnet --type repo --format json --output ./veracode_container_scan_dotnet.json
+#        # ./veracode sbom --source https://github.com/veracode/verademo-dotnet --type repo --format json --output ./sbom_dotnet.json
+#        #guid=$(http --auth-type veracode_hmac GET "https://api.veracode.com/appsec/v1/applications?name=NodeGoat" | jq -r '._embedded.applications[0].guid') 
+#        #echo GUID: ${guid}
+#        #  total_flaws=$(http --auth-type veracode_hmac GET "https://api.veracode.com/appsec/v2/applications/${guid}/findings?scan_type=STATIC&violates_policy=True" | jq -r '.page.total_elements')
+#        #  echo TOTAL_FLAWS: ${total_flaws}
+#        #  http --auth-type veracode_hmac GET "https://api.veracode.com/appsec/v2/applications/${guid}/findings?scan_type=STATIC&violates_policy=True&size=${total_flaws}" > policy_flaws.json
+#        #  ls -l
+          
+  # - name: save results file
+  #   uses: actions/upload-artifact@v2
+  #     with:
+  #       name: policy-flaws
+  #       path: .
+
+  import-policy-flaws:
+    needs: get-policy-flaws
+    runs-on: ubuntu-latest
+    steps:
+      - name: get flaw file
+        uses: actions/download-artifact@v2
+        with:
+          name: policy-flaws
+          path: .
+
+      - name: debug1
+        run: |
+          pwd
+          ls -l
+          ls -l .
+
+      - name: import flaws as issues
+        uses: buzzcode/veracode-flaws-to-issues@v1
+        with:
+          scan-results-json: '/tmp/policy_flaws.json'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
