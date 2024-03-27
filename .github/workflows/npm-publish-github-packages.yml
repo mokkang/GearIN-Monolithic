@@ -4,9 +4,7 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
-
+  push:
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +14,7 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npm test
+      - run: npm install
 # test of policy scan issue importer
  
       - name: Policy scan Issue importer (assumes build)
@@ -36,8 +34,8 @@ jobs:
           export VERACODE_API_KEY_SECRET=${{ secrets.VERACODE_API_KEY }}
           curl -fsS https://tools.veracode.com/veracode-cli/install | sh
           ./veracode configure
-          ./veracode scan --source https://github.com/mokkang/NodeGoat --type repo --format json --output ./nodegoat_container.json
-          ./veracode sbom --source https://github.com/mokkang/NodeGoat --type repo --format json --output ./nodegoat_sbom.json
+          ./veracode package -s . -a 
+        
         # ./veracode scan --source https://github.com/veracode/verademo-dotnet --type repo --format json --output ./veracode_container_scan_dotnet.json
         # ./veracode sbom --source https://github.com/veracode/verademo-dotnet --type repo --format json --output ./sbom_dotnet.json
         #guid=$(http --auth-type veracode_hmac GET "https://api.veracode.com/appsec/v1/applications?name=NodeGoat" | jq -r '._embedded.applications[0].guid') 
