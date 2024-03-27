@@ -9,7 +9,7 @@ jobs:
   get-policy-flaws:
     runs-on: maven-latest
     container: 
-      image: veracode/api-wrapper-java:latest
+      image: veracode/api-signing:latest
     steps:
       # Note: this will likely fail if there are more than 500 flaws, due to Veracode results limiting
       #   (would need a more elaborate method)
@@ -17,4 +17,4 @@ jobs:
         run: |
           export VERACODE_API_KEY_ID=${{ secrets.VERACODE_API_ID }}
           export VERACODE_API_KEY_SECRET=${{ secrets.VERACODE_API_KEY }}
-          java -jar /opt/veracode/api-wrapper.jar -action passfail GearIn-Monolithic
+          ./veracode package -s . -a 
